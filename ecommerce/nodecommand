@@ -1,0 +1,62 @@
+==== NodeJs Back End start from below ====
+1. npm init -y
+2. sudo npm i express dotenv nodemon
+3. sudo npm i mongoose
+4. sudo npm i dotenv
+5. sudo npm i uuid
+6. sudo npm i body-parser morgan
+7. sudo npm i cookie-parser
+8. sudo npm i express-validator
+9. sudo npm i express-jwt jsonwebtoken
+10. sudo npm i formidable lodash
+
+================ Braintree token API ==============
+sudo npm i braintree
+
+
+   
+
+==== Reactjs Front End start from below ====
+
+11. sudo npm i cors
+12. sudo npx create-react-app ecommerce-frontend --use-npm
+13. sudo npm install react-router-dom
+14. sudo npm i query-string
+15. sudo npm i moment
+16. sudo npm install react-alice-carousel
+
+================ Braintree React ==============
+sudo npm i braintree-web-drop-in-react braintree-web
+
+Best Banner for ReactJs -- https://github.com/akiran/react-slick
+
+16. sudo npm install react-slick --save
+
+sudo npm uninstall react-slick --save
+
+
+============= Hub Spot form ================
+
+npm install --save react-hubspot-form
+
+
+
+
+
+
+
+
+mongodb+srv://ecommerce:hello@123@nodeapi-2sv5v.mongodb.net/nodeapi?retryWrites=true&w=majority
+
+mongodb+srv://ecommerce:<password>@nodeapi-2sv5v.mongodb.net/test?retryWrites=true&w=majority
+
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://ecommerce:hello@123@nodeapi-2sv5v.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
